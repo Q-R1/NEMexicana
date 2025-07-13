@@ -1,1 +1,1 @@
-Nacimiento y desarrollo de la NEM  
+Nacimiento y desarrollo de la Nueva Escuela Mexicana (NEM)  
