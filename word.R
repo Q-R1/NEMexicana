@@ -20,3 +20,16 @@ wordcloud2(data=freq1, size = 0.7,shape = 'diamond',
                              'Purple', 'Brown', 'Grey', 'Darkblue', 'Darkred')
     ,nrow(freq3)))
 
+
+
+wordcloud2(
+  data = freq1,
+  size = 0.7,
+  shape = 'diamond',
+  color = rep_len(
+    c('Black', 'Red', 'Green', 'Blue', 'Orange', 'Purple', 'Brown', 'Grey', 'Darkblue', 'Darkred'),
+    nrow(freq1)  # Asegúrate de usar freq1 (no freq3) si es el dataframe correcto
+  )
+)
+# Guardar el gráfico en un archivo HTML
+saveWidget(wc, file = "wordcloud.html", selfcontained = TRUE)

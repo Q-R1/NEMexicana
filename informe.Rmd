@@ -1,3 +1,13 @@
+---
+title: "VScode"
+author: "QuiñoneS RutiagA"
+date: "2025-07-22"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
 library(funModeling)
 library(tidyverse)
 library(wordcloud2)
@@ -15,9 +25,14 @@ freq3
 
 
 
-wordcloud2(data=freq1, size = 0.7,shape = 'diamond',
-           color = rep_len(c('Black','Red', 'Green', 'Blue', 'Orange',
-                             'Purple', 'Brown', 'Grey', 'Darkblue', 'Darkred')
-    ,nrow(freq3)))
+wordcloud2(
+  data = freq1,
+  size = 0.7,
+  shape = 'diamond',
+  color = rep_len(
+    c('Black', 'Red', 'Green', 'Blue', 'Orange', 'Purple', 'Brown', 'Grey', 'Darkblue', 'Darkred'),
+    nrow(freq1)  # Asegúrate de usar freq1 (no freq3) si es el dataframe correcto
+  )
+)
 
-
+```
